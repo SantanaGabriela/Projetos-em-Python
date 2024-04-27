@@ -11,8 +11,8 @@ Cada resposta correta vale 10 pontos!
 print(Descricao)
 
 def Quiz():
-    iniciar = input("Deseja Começar? (S/N)")
-    if iniciar =="S" or "s":
+    iniciar = input("Deseja Começar? (S/N)").upper()
+    if iniciar =="S":
         print("Vamos começar!")
         iniciar_quiz()
     else:
@@ -21,9 +21,9 @@ def Quiz():
 def iniciar_quiz():
     score = 0 
     print("Qual a capital de Pernambuco? \n")
-    resposta= input(" (A)Caruaru \n (B)Recife \n (C)Olinda \n (D)Paulista \n Resposta:")
+    resposta= input(" (A)Caruaru \n (B)Recife \n (C)Olinda \n (D)Paulista \n Resposta:").upper()
 
-    if resposta == "B" or "b":
+    if resposta == "B":
         print("Resposta Correta")
         score += 10
     else:
@@ -33,16 +33,16 @@ def iniciar_quiz():
     print("Onde fica localizada a ilha de Fernando de Noronha ? \n")
     resposta2 = input(" (A) Rio De Janeiro \n (B)Fortaleza \n (C)Pernambuco \n (D)Paraíba \n Resposta:")
 
-    if resposta2 == "C" or "c":
+    if resposta2 == "C":
         print("Resposta Correta")
         score += 10
     else:
         print("Resposta Incorreta! :(")
     
     print("Qual a cidade conhecida por: onde o sol nasce primeiro ? \n")
-    resposta2 = input(" (A) Rio De Janeiro \n (B)Recife \n (C)Natal \n (D)João Pessoa \n Resposta:")
+    resposta3 = input(" (A) Rio De Janeiro \n (B)Recife \n (C)Natal \n (D)João Pessoa \n Resposta:").upper()
 
-    if resposta2 == "D" or "d":
+    if resposta3 == "D":
         print("Resposta Correta")
         score += 10
     else:
